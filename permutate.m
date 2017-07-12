@@ -41,7 +41,7 @@ end
 % remove up to 3 features
 function result = remove_features(maxFeatures, minFeatures, permutate)
     for sz = 1 : size(permutate) % number of samples
-        permutate(sz) = permutate{(sz) && rand > 0.5;
+        permutate(sz) = permutate(sz) && rand > 0.5;
     end 
 %     result = permutate;
 %     limit = max(minFeatures, features-3);

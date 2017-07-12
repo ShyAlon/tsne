@@ -159,7 +159,7 @@ for experimentCount = 1:10
                     top_q3 = population{1, iQuality3};
                     top_q5 = population{1, iQuality5};
                     top_trust = population{1, iTrust};
-                    top_features = population{sz, iFeatures};
+                    top_features = binaryVectorToHex(population{sz, iFeatures});
                     map = inter_map;
 
                     h = gscatter(inter_map(:,1), inter_map(:,2), labels);
