@@ -27,7 +27,7 @@ function result = add_features(maxFeatures, permutate)
     for sz = 1 : size(permutate) % number of samples
         permutate(sz) = permutate(sz) || rand > 0.5;
     end 
-%     result = permutate;
+    result = permutate;
 %     limit = min(maxFeatures, features+3);
 %     while features < limit
 %         digit = ceil(rand * maxFeatures);
@@ -43,7 +43,7 @@ function result = remove_features(maxFeatures, minFeatures, permutate)
     for sz = 1 : size(permutate) % number of samples
         permutate(sz) = permutate(sz) && rand > 0.5;
     end 
-%     result = permutate;
+    result = permutate;
 %     limit = max(minFeatures, features-3);
 %     while features > limit
 %         digit = ceil(rand * maxFeatures);
