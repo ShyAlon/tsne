@@ -159,19 +159,20 @@ for experimentCount = 1:10
                     top_q3 = population{1, iQuality3};
                     top_q5 = population{1, iQuality5};
                     top_trust = population{1, iTrust};
-                    top_features = binaryVectorToHex(population{sz, iFeatures});
+                    top_features = binaryVectorToHex(population{sz});
                     map = inter_map;
 
                     h = gscatter(inter_map(:,1), inter_map(:,2), labels);
                     % scatter3(inter_map(:,1), inter_map(:,2), inter_map(:,2),3,labels)
                     % view(40,35)
-                    csvwrite(sprintf('results/%s_%s_population_%0.3f.csv',name, mode{1}, generations), population);
-                    filename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_number_%0.0f_features_%0.0f.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_num, top_features);
-                    title(sprintf('%s %s q %0.3f q3 %0.3f q5 %0.3f trust %0.3f number %0.0f features %0.0f.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_num, top_features));
+                    % csvwrite
+                    xlswrite(sprintf('results/%s_%s_population_%0.3f.xls',name, mode{1}, generations), population);
+                    filename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features);
+                    title(sprintf('%s %s q %0.3f q3 %0.3f q5 %0.3f trust %0.3f features %s.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features));
                     saveas(h1, filename);
-                    figfilename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_number_%0.0f_features_%0.0f.fig',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_num, top_features);
+                    figfilename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.fig',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features);
                     savefig(h1,figfilename);
-                    csvwrite(sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_number_%0.0f_features_%0.0f.csv',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_num, top_features), map);
+                    xlswrite(sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f__features_%s.xls',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features), map);
                     allKeys = keys(top_classes);
                     csvClasses = []
                     row = 1;
