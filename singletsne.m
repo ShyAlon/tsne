@@ -13,7 +13,7 @@ function [map, q1, q3, q5, trust, features, c1, featuremap] = singletsne(new, n,
         numDims = 2; pcaDims = 50; perplexity = 30; theta = .1 + 6/8; alg = 'svd';
         % Run t-sne
         map = fast_tsne(data, numDims, pcaDims, perplexity, theta, alg);
-        brr = size(map)
+        brr = size(map);
     end
     [q1, c1] = quality(map, labels, 1);
     [q3, c3] = quality(map, labels, 3);

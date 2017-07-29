@@ -18,7 +18,7 @@ function permutate = permutate(permutate, maxFeatures, minFeatures)
             permutate = remove_features(maxFeatures, minFeatures, permutate);
             permutate = add_features(maxFeatures, permutate);
         end
-        delta = temp - permutate
+        delta = temp - permutate;
     end
 end
 

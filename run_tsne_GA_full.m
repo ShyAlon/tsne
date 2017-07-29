@@ -2,10 +2,13 @@
 %% run the experiment 100 times
 for experimentCount = 1:10
     % clear('all')
-    for trial = 8:8
+    for trial = 0:8
         % filename = websave('mnist_train.mat', 'https://github.com/awni/cs224n-pa4/blob/master/Simple_tSNE/mnist_train.mat?raw=true');
+        if trial == 0
+            local = '../large_files/random.csv';
+            name = 'random'; 
         %% Financial Ratios
-        if trial == 1
+        elseif trial == 1
             local = '../large_files/financialratios.data.csv';
             name = 'financialratios';
         elseif trial == 2     
@@ -39,6 +42,8 @@ for experimentCount = 1:10
             tags = '../large_files/joined_labels.csv';
             name = 'joined';
         end
+        
+        foul_counter = 0;
 
         %% Read the data source
 
@@ -115,6 +120,10 @@ for experimentCount = 1:10
         population = sortrows(population, -iQuality);
         top_q = 0;
         for generations = 1 : 128
+            if foul_counter > 2
+                message = 'breaking on three fouls'
+                break;
+            end
             % create the mutations
             for index = 1 : population_size * 0.2
                 population{population_size + 1 - index, iSeed} = permutate(population{sz, iSeed}, n, 5);
@@ -130,7 +139,7 @@ for experimentCount = 1:10
             inter_map = [];
             inter_features = [];
             top_num = 0;
-            top_classes = []
+            top_classes = [];
             for sz = population_size*0.3 + 1 : population_size % number of samples
                 num = population(sz, iSeed);
                 [map, q, q3, q5, trust, features, cl, featuremap] = singletsne(new, n, labels);
@@ -152,8 +161,10 @@ for experimentCount = 1:10
 
             legend('off');
             % Genetic algorithm implementation
-            % if inter_q > top_q  % there was improvement or overcoming local maximum        
+            % if inter_q > top_q  % there was improvement or overcoming local maximum  
+            if size(inter_map,1) > 0
                 try
+                    foul_counter = 0;
                     top_num = population{1, iSeed};
                     top_q = population{1, iQuality};
                     top_q3 = population{1, iQuality3};
@@ -161,18 +172,24 @@ for experimentCount = 1:10
                     top_trust = population{1, iTrust};
                     top_features = binaryVectorToHex(population{sz});
                     map = inter_map;
-
                     h = gscatter(inter_map(:,1), inter_map(:,2), labels);
                     % scatter3(inter_map(:,1), inter_map(:,2), inter_map(:,2),3,labels)
                     % view(40,35)
                     % csvwrite
-                    xlswrite(sprintf('results/%s_%s_population_%0.3f.xls',name, mode{1}, generations), population);
-                    filename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features);
-                    title(sprintf('%s %s q %0.3f q3 %0.3f q5 %0.3f trust %0.3f features %s.png',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features));
+                           
+                    if trial == 3 || trial == 8
+                        modeText = mode{1};
+                    else
+                        modeText = sprintf('%d', mode(1));
+                    end
+                    message = sprintf('results/%s_%s_population_%0.3f.xls',name, modeText, generations)
+                    xlswrite(message, population);
+                    filename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.png',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
+                    title(sprintf('%s %s q %0.3f q3 %0.3f q5 %0.3f trust %0.3f features %s.png',name, modeText, top_q, top_q3, top_q5, top_trust, top_features));
                     saveas(h1, filename);
-                    figfilename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.fig',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features);
+                    figfilename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.fig',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
                     savefig(h1,figfilename);
-                    xlswrite(sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f__features_%s.xls',name, mode{1}, top_q, top_q3, top_q5, top_trust, top_features), map);
+                    xlswrite(sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f__features_%s.xls',name, modeText, top_q, top_q3, top_q5, top_trust, top_features), map);
                     allKeys = keys(top_classes);
                     csvClasses = []
                     row = 1;
@@ -186,9 +203,12 @@ for experimentCount = 1:10
                     end
                     csvwrite(sprintf('results/%s_q_%0.3f_classes.csv',name, top_q), csvClasses);
                 catch ME
-                    disp('Failed writing the result files');
+                    message = 'Failed writing the result files'
                 end 
-            % end
+            else 
+                message = 'invalid map'
+                foul_counter = foul_counter +1;
+            end
         end   
     end
 end
