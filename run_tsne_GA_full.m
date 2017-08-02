@@ -6,42 +6,42 @@ for experimentCount = 1:10
         clusterGen = 128;
         % filename = websave('mnist_train.mat', 'https://github.com/awni/cs224n-pa4/blob/master/Simple_tSNE/mnist_train.mat?raw=true');
         if trial == 0
-            local = '../large_files/random.csv';
+            local = './large_files/random.csv';
             name = 'random'; 
         %% Financial Ratios
         elseif trial == 1
-            local = '../large_files/financialratios.data.csv';
+            local = './large_files/financialratios.data.csv';
             name = 'financialratios';
         elseif trial == 2     
         %% Qualitative bankruptcy
-            local = '../large_files/Qualitative_Bankruptcy.data.csv';
+            local = './large_files/Qualitative_Bankruptcy.data.csv';
             name = 'QualitativeBankruptcy';
         elseif trial == 3  
         %% CMC Database
-            local = '../large_files/CMC_DataBase.csv';
-            tags = '../large_files/CMC_DataBase_labels.csv';
+            local = './large_files/CMC_DataBase.csv';
+            tags = './large_files/CMC_DataBase_labels.csv';
             name = 'CMC';
         elseif trial == 4  
         %% Bitter Database
-            local = '../large_files/bitter_dataBase.csv';
+            local = './large_files/bitter_dataBase.csv';
             name = 'bitter';
         elseif trial == 5  
         %% Solar Cells Database
-            local = '../large_files/solar_cells_DataBase.csv';
+            local = './large_files/solar_cells_DataBase.csv';
             name = 'solar_cells';
         elseif trial == 6  
         %% LogBBB Database
-            local = '../large_files/logbbb.csv';
+            local = './large_files/logbbb.csv';
             name = 'LogBBB';
             clusterGen = 256;
         elseif trial == 7  
         %% FeGaPd Database
-            local = '../large_files/FeGaPd_Exp_PP.csv';
+            local = './large_files/FeGaPd_Exp_PP.csv';
             name = 'FeGaPd';
         elseif trial == 8  
         %% FeGaPd Database
-            local = '../large_files/joined.csv';
-            tags = '../large_files/joined_labels.csv';
+            local = './large_files/joined.csv';
+            tags = './large_files/joined_labels.csv';
             name = 'joined';
         end
         
@@ -172,7 +172,9 @@ for experimentCount = 1:10
                     top_q3 = population{1, iQuality3};
                     top_q5 = population{1, iQuality5};
                     top_trust = population{1, iTrust};
-                    top_features = binaryVectorToHex(population{sz});
+                    a = [zeros(1,4-mod(numel(population{sz})-1,4)-1) population{sz}];
+                    hexFeatures = dec2hex(bin2dec(num2str(reshape(a,4,[])','%1d')))'
+                    top_features = hexFeatures % binaryVectorToHex(population{sz});
                     map = inter_map;
                     h = gscatter(inter_map(:,1), inter_map(:,2), labels);
                     % scatter3(inter_map(:,1), inter_map(:,2), inter_map(:,2),3,labels)
@@ -184,14 +186,14 @@ for experimentCount = 1:10
                     else
                         modeText = sprintf('%d', mode(1));
                     end
-                    message = sprintf('results/%s_%s_population_%0.3f.xls',name, modeText, generations)
-                    xlswrite(message, population);
-                    filename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.png',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
+                    %message = sprintf('../results/%s_%s_population_%0.3f.xls',name, modeText, generations)
+                    %xlswrite(message, population);
+                    filename = sprintf('../results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.png',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
                     title(sprintf('%s %s q %0.3f q3 %0.3f q5 %0.3f trust %0.3f features %s.png',name, modeText, top_q, top_q3, top_q5, top_trust, top_features));
                     saveas(h1, filename);
-                    figfilename = sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.fig',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
+                    figfilename = sprintf('../results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f_features_%s.fig',name, modeText, top_q, top_q3, top_q5, top_trust, top_features);
                     savefig(h1,figfilename);
-                    xlswrite(sprintf('results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f__features_%s.xls',name, modeText, top_q, top_q3, top_q5, top_trust, top_features), map);
+                    %xlswrite(sprintf('../results/%s_%s_q_%0.3f_q3_%0.3f_q5_%0.3f_trust_%0.3f__features_%s.xls',name, modeText, top_q, top_q3, top_q5, top_trust, top_features), map);
                     allKeys = keys(top_classes);
                     csvClasses = []
                     row = 1;
@@ -203,7 +205,7 @@ for experimentCount = 1:10
                         end
                         row = row + 1;
                     end
-                    csvwrite(sprintf('results/%s_q_%0.3f_classes.csv',name, top_q), csvClasses);
+                    csvwrite(sprintf('../results/%s_q_%0.3f_classes.csv',name, top_q), csvClasses);
                 catch ME
                     message = 'Failed writing the result files'
                 end 

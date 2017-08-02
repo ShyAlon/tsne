@@ -94,7 +94,7 @@ function mappedX = fast_tsne(X, no_dims, initial_dims, perplexity, theta, alg, m
         delete('result.dat');
     catch ME
        disp('Failed on t-sne');
-       mappedX = []
+       mappedX = [];
     end 
     
     
