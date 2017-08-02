@@ -2,7 +2,8 @@
 %% run the experiment 100 times
 for experimentCount = 1:10
     % clear('all')
-    for trial = 0:8
+    for trial = 6:6
+        clusterGen = 128;
         % filename = websave('mnist_train.mat', 'https://github.com/awni/cs224n-pa4/blob/master/Simple_tSNE/mnist_train.mat?raw=true');
         if trial == 0
             local = '../large_files/random.csv';
@@ -32,6 +33,7 @@ for experimentCount = 1:10
         %% LogBBB Database
             local = '../large_files/logbbb.csv';
             name = 'LogBBB';
+            clusterGen = 256;
         elseif trial == 7  
         %% FeGaPd Database
             local = '../large_files/FeGaPd_Exp_PP.csv';
@@ -102,7 +104,7 @@ for experimentCount = 1:10
         iMap = 6;
         iFeatures = 7;
         population = [];
-        population_size = 10;
+        population_size = 20;
         maps = [];
         features = [];
         populationFeatures = {};
@@ -119,8 +121,8 @@ for experimentCount = 1:10
         % Sort the existing population
         population = sortrows(population, -iQuality);
         top_q = 0;
-        for generations = 1 : 128
-            if foul_counter > 2
+        for generations = 1 : clusterGen
+            if foul_counter > 16
                 message = 'breaking on three fouls'
                 break;
             end
