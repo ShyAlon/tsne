@@ -80,18 +80,21 @@ function mappedX = fast_tsne(X, no_dims, initial_dims, perplexity, theta, alg, m
     
     try
         % Run the fast diffusion SNE implementation
-        tsne_path = which('fast_tsne');
-        tsne_path = fileparts(tsne_path);
-        write_data(X, no_dims, theta, perplexity, max_iter);
+        
         if ismac
-            tic, system(fullfile(tsne_path,'./windows/mac_bh_tsne')); toc
+            %tic, system(fullfile(tsne_path,'./windows/mac_bh_tsne')); toc
+            mappedX = tsne(X,'Algorithm','barneshut');
         else
+            tsne_path = which('fast_tsne');
+            tsne_path = fileparts(tsne_path);
+            write_data(X, no_dims, theta, perplexity, max_iter);
             tic, system(fullfile(tsne_path,'./windows/windows_bh_tsne')); toc
-        end
-        [mappedX, landmarks, costs] = read_data;   
-        landmarks = landmarks + 1;              % correct for Matlab indexing
-        delete('data.dat');
-        delete('result.dat');
+            [mappedX, landmarks, costs] = read_data;   
+            landmarks = landmarks + 1;              % correct for Matlab indexing
+            delete('data.dat');
+            delete('result.dat');
+        end 
+        
     catch ME
        disp('Failed on t-sne');
        mappedX = [];

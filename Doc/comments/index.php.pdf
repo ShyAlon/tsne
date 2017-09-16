@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html  dir="rtl" lang="he" xml:lang="he">
+<head>
+    <title>אפקה 2016-2017: התחברות למערכת</title>
+    <link rel="shortcut icon" href="http://afekamoodle2017.afeka.ac.il/theme/image.php/more/theme/1499240866/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, אפקה 2016-2017: התחברות למערכת" />
+<link rel="stylesheet" type="text/css" href="http://afekamoodle2017.afeka.ac.il/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://afekamoodle2017.afeka.ac.il/theme/styles.php/more/1499240866/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/afekamoodle2017.afeka.ac.il","sesskey":"1H1buStq5I","loadingicon":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/image.php\/more\/core\/1499240866\/i\/loading_small","themerev":"1499240866","slasharguments":1,"theme":"more","jsrev":"1499240866","admin":"admin","svgicons":true,"developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":true,"base":"http:\/\/afekamoodle2017.afeka.ac.il\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/afekamoodle2017.afeka.ac.il\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/yui_combo.php?m\/1499240866\/","combine":true,"comboBase":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/yui_combo.php?","ext":false,"root":"m\/1499240866\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-core_message-deletemessage":{"requires":["node","event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-limitchoices":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_course_overview_campus-filter":{"requires":["base","node"]},"moodle-block_course_overview_campus-hidecourse":{"requires":["base","node"]},"moodle-block_course_overview_campus-hidenews":{"requires":["base","node"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/afekamoodle2017.afeka.ac.il\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/afekamoodle2017.afeka.ac.il\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1499240866\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/afekamoodle2017.afeka.ac.il\/lib\/javascript.php\/1499240866\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/afekamoodle2017.afeka.ac.il\/lib\/javascript.php\/1499240866\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67692962-2', 'auto');
+  ga('send', 'pageview');
+
+</script><meta name="robots" content="noindex" />    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-login-index" class="format-site  path-login safari dir-rtl lang-he yui-skin-sam yui3-skin-sam afekamoodle2017-afeka-ac-il pagelayout-login course-1 context-3 notloggedin content-only layout-option-langmenu">
+
+<div class="skiplinks"><a class="skip" href="#maincontent">דילוג לתוכן העיקרי</a></div>
+<script type="text/javascript" src="http://afekamoodle2017.afeka.ac.il/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js&amp;rollup/1499240866/mcore-debug.js"></script><script type="text/javascript" src="http://afekamoodle2017.afeka.ac.il/lib/javascript.php/1499240866/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar navbar-fixed-top navbar-inverse moodle-has-zindex">
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" title="ראשי" href="http://afekamoodle2017.afeka.ac.il">אפקה 2016-2017</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></a>            <div class="usermenu"><span class="login">את/ה לא מחובר/ת</span></div>                        <div class="nav-collapse collapse">
+                <ul class="nav"><li class="dropdown"><a href="תואר ראשון להנדסה Bs.c" class="dropdown-toggle" data-toggle="dropdown" title="תואר ראשון להנדסה Bs.c">תואר ראשון להנדסה Bs.c<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" הנדסת תוכנה" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=93"> הנדסת תוכנה</a></li><li><a title=" הנדסת חשמל" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=81"> הנדסת חשמל</a></li><li><a title=" הנדסה מכנית" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=69"> הנדסה מכנית</a></li><li><a title=" הנדסה רפואית" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=57"> הנדסה רפואית</a></li><li><a title=" הנדסת תעשיה וניהול" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=45"> הנדסת תעשיה וניהול</a></li></ul><li class="dropdown"><a href="תואר שני להנדסה MS.c" class="dropdown-toggle" data-toggle="dropdown" title="תואר שני להנדסה MS.c">תואר שני להנדסה MS.c<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" הנדסת מערכות" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=144"> הנדסת מערכות</a></li><li><a title=" הנדסת אנרגיה" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=132"> הנדסת אנרגיה</a></li><li><a title=" הנדסת שרות" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=120"> הנדסת שרות</a></li><li><a title=" הנדסת תשתית" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=108"> הנדסת תשתית</a></li><li><a title=" הנדסת מערכות תבוניות" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=252"> הנדסת מערכות תבוניות</a></li></ul><li class="dropdown"><a href="מדעי היסוד" class="dropdown-toggle" data-toggle="dropdown" title="מדעי היסוד">מדעי היסוד<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" מחלקת מתמטיקה" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=198"> מחלקת מתמטיקה</a></li><li><a title=" מחלקת פיזיקה" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=210"> מחלקת פיזיקה</a></li><li><a title=" קורסי מבוא" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=171"> קורסי מבוא</a></li><li><a title=" קורסי קדם אקדמי" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=159"> קורסי קדם אקדמי</a></li></ul><li class="dropdown"><a href="היחידה להוראת אנגלית" class="dropdown-toggle" data-toggle="dropdown" title="היחידה להוראת אנגלית">היחידה להוראת אנגלית<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" היחידה להוראת אנגלית" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=30"> היחידה להוראת אנגלית</a></li></ul><li class="dropdown"><a href="לימודים כללים" class="dropdown-toggle" data-toggle="dropdown" title="לימודים כללים">לימודים כללים<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" לימודים כללים" href="http://afekamoodle2017.afeka.ac.il/course/index.php?categoryid=18"> לימודים כללים</a></li></ul><li class="dropdown"><a href="http://afekamoodle2017.afeka.ac.il/course/view.php?id=2898" class="dropdown-toggle" data-toggle="dropdown" title="תמיכה ושירות">תמיכה ושירות<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" שירותים מקוונים" href="http://afekamoodle2017.afeka.ac.il/course/view.php?id=2898"> שירותים מקוונים</a></li><li><a title=" מרצים" href="http://afekamoodle2017.afeka.ac.il/course/view.php?id=2912"> מרצים</a></li><li><a title="סטודנטים" href="http://afekamoodle2017.afeka.ac.il/course/view.php?id=2924">סטודנטים</a></li><li><a title=" הורדות" href="http://afekamoodle2017.afeka.ac.il/course/view.php?id=2915"> הורדות</a></li></ul><li class="dropdown langmenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="שפת ממשק">עברית ‎(he)‎<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="English ‎(en)‎" href="http://afekamoodle2017.afeka.ac.il/login/index.php?lang=en">English ‎(en)‎</a></li><li><a title="עברית ‎(he)‎" href="http://afekamoodle2017.afeka.ac.il/login/index.php?lang=he">עברית ‎(he)‎</a></li><li><a title="عربي ‎(ar)‎" href="http://afekamoodle2017.afeka.ac.il/login/index.php?lang=ar">عربي ‎(ar)‎</a></li></ul></ul>                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="page" class="container-fluid">
+
+    <header id="page-header" class="clearfix"><div class="page-context-header"><div class="page-header-headings"><h1>אפקה 2016-2017</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">נתיב העמוד</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://afekamoodle2017.afeka.ac.il/"><span itemprop="title">ראשי</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25C4;</span> </span></li><li><span tabindex="0">התחברות למערכת</span></li></ul></nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></header>
+    <div id="page-content" class="row-fluid">
+        <section id="region-main" class="span12">
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="loginbox clearfix onecolumn">
+  <div class="loginpanel">
+    <h2>התחברות</h2>
+      <div class="subcontent loginsub">
+                <form action="http://afekamoodle2017.afeka.ac.il/login/index.php" method="post" id="login"  >
+          <div class="loginform">
+            <div class="form-label"><label for="username">שם משתמש</label></div>
+            <div class="form-input">
+              <input type="text" name="username" id="username" size="15" value="" />
+            </div>
+            <div class="clearer"><!-- --></div>
+            <div class="form-label"><label for="password">סיסמה</label></div>
+            <div class="form-input">
+              <input type="password" name="password" id="password" size="15" value=""  />
+            </div>
+          </div>
+            <div class="clearer"><!-- --></div>
+                            <div class="rememberpass">
+                  <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                  <label for="rememberusername">זכירת שם משתמש/ת</label>
+              </div>
+                        <div class="clearer"><!-- --></div>
+          <input id="anchor" type="hidden" name="anchor" value="" />
+          <script>document.getElementById('anchor').value = location.hash</script>
+          <input type="submit" id="loginbtn" value="התחברות" />
+          <div class="forgetpass"><a href="forgot_password.php">שכחת את שם המשתמש או את הסיסמה שלך?</a></div>
+        </form>
+        <div class="desc">
+            הדפדפן שלך צריך לאפשר עוגיות<span class="helptooltip"><a href="http://afekamoodle2017.afeka.ac.il/help.php?component=moodle&amp;identifier=cookiesenabled&amp;lang=he" title="עזרה עם הדפדפן שלך צריך לאפשר עוגיות" aria-haspopup="true" target="_blank"><img src="http://afekamoodle2017.afeka.ac.il/theme/image.php/more/core/1499240866/help" alt="עזרה עם הדפדפן שלך צריך לאפשר עוגיות" class="iconhelp" /></a></span>        </div>
+      </div>
+
+      <div class="subcontent guestsub">
+        <div class="desc">
+          יתכן וחלק מהקורסים מאפשרים כניסת אורחים        </div>
+        <form action="index.php" method="post" id="guestlogin">
+          <div class="guestform">
+            <input type="hidden" name="username" value="guest" />
+            <input type="hidden" name="password" value="guest" />
+            <input type="submit" value="התחברות כאורח" />
+          </div>
+        </form>
+      </div>
+     </div>
+</div>
+</div>        </section>
+    </div>
+
+    <footer id="page-footer">
+        <div id="course-footer"></div>
+        <p class="helplink"></p>
+        <div class="logininfo">את/ה לא מחובר/ת</div><div class="homelink"><a href="http://afekamoodle2017.afeka.ac.il/">ראשי</a></div>    </footer>
+
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://afekamoodle2017.afeka.ac.il/lib/requirejs.php/1499240866/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+
+    paths: {
+        jquery: 'http://afekamoodle2017.afeka.ac.il/lib/javascript.php/1499240866/lib/jquery/jquery-1.12.1.min',
+        jqueryui: 'http://afekamoodle2017.afeka.ac.il/lib/javascript.php/1499240866/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'http://afekamoodle2017.afeka.ac.il/lib/javascript.php/1499240866/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://afekamoodle2017.afeka.ac.il/lib/javascript.php/1499240866/lib/requirejs/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["core/notification"], function(amd) { amd.init(3, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"trace"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="http://afekamoodle2017.afeka.ac.il/theme/javascript.php/more/1499240866/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u05e9\u05d9\u05e0\u05d5\u05d9 \u05d0\u05d7\u05e8\u05d5\u05df","name":"\u05e9\u05dd","error":"\u05d8\u05e2\u05d5\u05ea","info":"\u05de\u05d9\u05d3\u05e2","yes":"\u05db\u05df","no":"\u05dc\u05d0","morehelp":"\u05e2\u05d6\u05e8\u05d4 \u05e0\u05d5\u05e1\u05e4\u05ea","loadinghelp":"\u05d8\u05d5\u05e2\u05df...","cancel":"\u05d1\u05d9\u05d8\u05d5\u05dc","confirm":"\u05d0\u05d9\u05e9\u05d5\u05e8","areyousure":"\u05d4\u05d0\u05dd \u05d0\u05ea\/\u05d4 \u05d1\u05d8\u05d5\u05d7\/\u05d4?","closebuttontitle":"\u05e1\u05d2\u05d9\u05e8\u05d4","unknownerror":"\u05e9\u05d2\u05d9\u05d0\u05d4 \u05dc\u05d0 \u05d9\u05d3\u05d5\u05e2\u05d4"},"repository":{"type":"\u05e1\u05d5\u05d2","size":"\u05d2\u05d5\u05d3\u05dc","invalidjson":"\u05ea\u05e7\u05dc\u05ea \u05ea\u05e7\u05e9\u05d5\u05e8\u05ea. \u05d0\u05e0\u05d0 \u05d4\u05ea\u05d7\u05d1\u05e8\u05d5 \u05e9\u05d5\u05d1 \u05dc\u05de\u05e2\u05e8\u05db\u05ea.","nofilesattached":"\u05dc\u05d0 \u05e0\u05d1\u05d7\u05e8\u05d5 \u05e7\u05d1\u05e6\u05d9\u05dd","filepicker":"\u05d1\u05d7\u05d9\u05e8\u05ea \u05e7\u05d5\u05d1\u05e5","logout":"\u05d4\u05ea\u05e0\u05ea\u05e7\u05d5\u05ea","nofilesavailable":"\u05de\u05d0\u05d2\u05e8 \u05d4\u05e7\u05d1\u05e6\u05d9\u05dd \u05e8\u05d9\u05e7","norepositoriesavailable":"\u05de\u05e6\u05d8\u05e2\u05e8\u05d9\u05dd, \u05d0\u05e3 \u05d0\u05d7\u05d3 \u05de\u05d4\u05de\u05d0\u05d2\u05e8\u05d9\u05dd \u05d4\u05e0\u05d5\u05db\u05d7\u05d9\u05d9\u05dd \u05e9\u05dc\u05da \u05d9\u05db\u05d5\u05dc \u05dc\u05d4\u05d7\u05d6\u05d9\u05e8 \u05e7\u05d1\u05e6\u05d9\u05dd \u05d1\u05ea\u05d1\u05e0\u05d9\u05ea \u05d4\u05de\u05d1\u05d5\u05e7\u05e9\u05ea","fileexistsdialogheader":"\u05e7\u05d1\u05e6\u05d9\u05dd \u05e7\u05d9\u05d9\u05de\u05d9\u05dd","fileexistsdialog_editor":"\u05e7\u05d5\u05d1\u05e5 \u05d1\u05e2\u05dc \u05e9\u05dd \u05d6\u05d4\u05d4 \u05e6\u05d5\u05e8\u05e3 \u05db\u05d1\u05e8 \u05dc\u05ea\u05d5\u05db\u05df \u05e9\u05d4\u05d9\u05e0\u05da \u05e2\u05d5\u05de\u05d3\/\u05ea \u05dc\u05e2\u05e8\u05d5\u05da.","fileexistsdialog_filemanager":"\u05e7\u05d5\u05d1\u05e5 \u05d1\u05e2\u05dc \u05e9\u05dd \u05d6\u05d4\u05d4 \u05e7\u05d9\u05d9\u05dd \u05d1\u05de\u05e2\u05e8\u05db\u05ea","renameto":"\u05e9\u05d9\u05e0\u05d5\u05d9 \u05e9\u05dd \u05dc: \"{$a}\"","referencesexist":"{$a} \u05e7\u05d1\u05e6\u05d9\u05dd \u05de\u05e7\u05d5\u05e9\u05e8\u05d9\u05dd \u05dc\u05e7\u05d5\u05d1\u05e5 \u05d6\u05d4, \u05d4\u05de\u05e9\u05de\u05e9 \u05db\u05de\u05e7\u05d5\u05e8 \u05e9\u05dc\u05d4\u05dd","select":"\u05d1\u05d7\u05d9\u05e8\u05d4"},"admin":{"confirmdeletecomments":"\u05d4\u05d9\u05e0\u05da \u05e2\u05d5\u05de\u05d3 \u05dc\u05de\u05d7\u05d5\u05e7 \u05d4\u05e2\u05e8\u05d5\u05ea, \u05d4\u05d0\u05dd \u05d0\u05ea\u05d4 \u05d1\u05d8\u05d5\u05d7?","confirmation":"\u05d0\u05d9\u05e9\u05d5\u05e8"},"block":{"addtodock":"\u05d4\u05e2\u05d1\u05e8\u05ea \u05de\u05e9\u05d1\u05e6\u05ea \u05d6\u05d5 \u05dc\u05e1\u05e8\u05d2\u05dc\u05be\u05d4\u05e6\u05d3\u05d3\u05d9","undockitem":"\u05d4\u05e1\u05e8\u05ea \u05de\u05e9\u05d1\u05e6\u05ea \u05d6\u05d5 \u05de\u05d4\u05e1\u05e8\u05d2\u05dc\u05be\u05d4\u05e6\u05d3\u05d3\u05d9","dockblock":"\u05d4\u05e2\u05d1\u05e8\u05ea \u05d0\u05ea \u05de\u05e9\u05d1\u05e6\u05ea {$a} \u05dc\u05e1\u05e8\u05d2\u05dc \u05d4\u05e6\u05d3\u05d3\u05d9","undockblock":"\u05d4\u05d7\u05d6\u05e8\u05ea \u05de\u05e9\u05d1\u05e6\u05ea {$a} \u05de\u05d4\u05e1\u05e8\u05d2\u05dc \u05d4\u05e6\u05d3\u05d3\u05d9","undockall":"\u05d4\u05e1\u05e8\u05ea \u05db\u05dc \u05d4\u05de\u05e9\u05d1\u05e6\u05d5\u05ea \u05de\u05d4\u05e1\u05e8\u05d2\u05dc\u05be\u05d4\u05e6\u05d3\u05d3\u05d9","hidedockpanel":"\u05d4\u05e1\u05ea\u05e8\u05ea \u05e1\u05e8\u05d2\u05dc-\u05d4\u05e6\u05d3","hidepanel":"\u05d4\u05e1\u05ea\u05e8\u05ea \u05d4\u05e1\u05e8\u05d2\u05dc-\u05e6\u05d3"},"langconfig":{"thisdirectionvertical":"ttb"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_skiplink(Y);
+Y.use("moodle-core-formautosubmit",function() {M.core.init_formautosubmit({"selectid":"single_select59bd10d5b84004","nothing":false});
+});
+ M.util.js_pending('random59bd10d5b84005'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random59bd10d5b84005'); });
+})();
+//]]>
+</script>
+
+</div>
+</body>
+</html>
